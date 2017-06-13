@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AE3CA90ED43164646452300 /* Pods_LovePub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311AABC31DCC562F774F10C9 /* Pods_LovePub.framework */; };
+		6EE4326D1EF083A80021474D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6EE4326C1EF083A80021474D /* Podfile */; };
+		6EE4326F1EF087EF0021474D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4326E1EF087EF0021474D /* User.swift */; };
 		6EEA1D271EF07FB400EB465F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA1D261EF07FB400EB465F /* AppDelegate.swift */; };
-		6EEA1D291EF07FB400EB465F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA1D281EF07FB400EB465F /* ViewController.swift */; };
 		6EEA1D2C1EF07FB400EB465F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEA1D2A1EF07FB400EB465F /* Main.storyboard */; };
 		6EEA1D2E1EF07FB400EB465F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EEA1D2D1EF07FB400EB465F /* Assets.xcassets */; };
 		6EEA1D311EF07FB400EB465F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEA1D2F1EF07FB400EB465F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		311AABC31DCC562F774F10C9 /* Pods_LovePub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LovePub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F59CB92A8A52C7F538C11F /* Pods-LovePub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovePub.release.xcconfig"; path = "Pods/Target Support Files/Pods-LovePub/Pods-LovePub.release.xcconfig"; sourceTree = "<group>"; };
+		6EE4326C1EF083A80021474D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		6EE4326E1EF087EF0021474D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6EEA1D231EF07FB400EB465F /* LovePub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LovePub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EEA1D261EF07FB400EB465F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6EEA1D281EF07FB400EB465F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6EEA1D2B1EF07FB400EB465F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EEA1D2D1EF07FB400EB465F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EEA1D301EF07FB400EB465F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EEA1D321EF07FB400EB465F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60ADD5877D80CB6C8CA5C75 /* Pods-LovePub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovePub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LovePub/Pods-LovePub.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE3CA90ED43164646452300 /* Pods_LovePub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EE432701EF087F70021474D /* Internet */ = {
+			isa = PBXGroup;
+			children = (
+				6EE4326E1EF087EF0021474D /* User.swift */,
+			);
+			name = Internet;
+			sourceTree = "<group>";
+		};
+		6EE432711EF088050021474D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6EE432721EF0880D0021474D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6EEA1D261EF07FB400EB465F /* AppDelegate.swift */,
+				6EEA1D2D1EF07FB400EB465F /* Assets.xcassets */,
+				6EEA1D2F1EF07FB400EB465F /* LaunchScreen.storyboard */,
+				6EEA1D2A1EF07FB400EB465F /* Main.storyboard */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		6EE432731EF0881E0021474D /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
 		6EEA1D1A1EF07FB400EB465F = {
 			isa = PBXGroup;
 			children = (
+				6EE4326C1EF083A80021474D /* Podfile */,
 				6EEA1D251EF07FB400EB465F /* LovePub */,
 				6EEA1D241EF07FB400EB465F /* Products */,
+				7A2C1EEF120CCFAAAE8D1E27 /* Pods */,
+				7B52E2F655EAC39FCE96F350 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +97,30 @@
 		6EEA1D251EF07FB400EB465F /* LovePub */ = {
 			isa = PBXGroup;
 			children = (
-				6EEA1D261EF07FB400EB465F /* AppDelegate.swift */,
-				6EEA1D281EF07FB400EB465F /* ViewController.swift */,
-				6EEA1D2A1EF07FB400EB465F /* Main.storyboard */,
-				6EEA1D2D1EF07FB400EB465F /* Assets.xcassets */,
-				6EEA1D2F1EF07FB400EB465F /* LaunchScreen.storyboard */,
+				6EE432731EF0881E0021474D /* View Controller */,
+				6EE432721EF0880D0021474D /* Support */,
+				6EE432711EF088050021474D /* Model */,
+				6EE432701EF087F70021474D /* Internet */,
 				6EEA1D321EF07FB400EB465F /* Info.plist */,
 			);
 			path = LovePub;
+			sourceTree = "<group>";
+		};
+		7A2C1EEF120CCFAAAE8D1E27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A60ADD5877D80CB6C8CA5C75 /* Pods-LovePub.debug.xcconfig */,
+				66F59CB92A8A52C7F538C11F /* Pods-LovePub.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B52E2F655EAC39FCE96F350 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				311AABC31DCC562F774F10C9 /* Pods_LovePub.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EEA1D351EF07FB400EB465F /* Build configuration list for PBXNativeTarget "LovePub" */;
 			buildPhases = (
+				421F2F8C33248D7F6078DD72 /* [CP] Check Pods Manifest.lock */,
 				6EEA1D1F1EF07FB400EB465F /* Sources */,
 				6EEA1D201EF07FB400EB465F /* Frameworks */,
 				6EEA1D211EF07FB400EB465F /* Resources */,
+				AD6D40777D4B15062B59843A /* [CP] Embed Pods Frameworks */,
+				9051226C64863A9C25C7F175 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,19 +188,68 @@
 			files = (
 				6EEA1D311EF07FB400EB465F /* LaunchScreen.storyboard in Resources */,
 				6EEA1D2E1EF07FB400EB465F /* Assets.xcassets in Resources */,
+				6EE4326D1EF083A80021474D /* Podfile in Resources */,
 				6EEA1D2C1EF07FB400EB465F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		421F2F8C33248D7F6078DD72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9051226C64863A9C25C7F175 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LovePub/Pods-LovePub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD6D40777D4B15062B59843A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LovePub/Pods-LovePub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6EEA1D1F1EF07FB400EB465F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EEA1D291EF07FB400EB465F /* ViewController.swift in Sources */,
 				6EEA1D271EF07FB400EB465F /* AppDelegate.swift in Sources */,
+				6EE4326F1EF087EF0021474D /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +372,12 @@
 		};
 		6EEA1D361EF07FB400EB465F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A60ADD5877D80CB6C8CA5C75 /* Pods-LovePub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QKMD9SP96X;
 				INFOPLIST_FILE = LovePub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xieliwei.LovePub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,10 +387,12 @@
 		};
 		6EEA1D371EF07FB400EB465F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F59CB92A8A52C7F538C11F /* Pods-LovePub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QKMD9SP96X;
 				INFOPLIST_FILE = LovePub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xieliwei.LovePub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +419,7 @@
 				6EEA1D371EF07FB400EB465F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
