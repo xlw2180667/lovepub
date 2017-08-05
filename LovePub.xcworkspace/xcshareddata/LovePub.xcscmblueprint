@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "382A20B32546D61DE7EA9A055388F777984B7DC7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "382A20B32546D61DE7EA9A055388F777984B7DC7" : 9223372036854775807,
+    "512C128960C19CA3812D969966E0B77200398F9D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5F3919BE-A2BB-4138-9CD1-02C010516B32",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "382A20B32546D61DE7EA9A055388F777984B7DC7" : "lovepub\/",
+    "512C128960C19CA3812D969966E0B77200398F9D" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LovePub",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LovePub.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xlw2180667\/lovepub.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "382A20B32546D61DE7EA9A055388F777984B7DC7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xlw2180667\/lovepub.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "512C128960C19CA3812D969966E0B77200398F9D"
+    }
+  ]
+}
