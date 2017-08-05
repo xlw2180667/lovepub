@@ -10,6 +10,8 @@
 		6AE3CA90ED43164646452300 /* Pods_LovePub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311AABC31DCC562F774F10C9 /* Pods_LovePub.framework */; };
 		6EE4326D1EF083A80021474D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6EE4326C1EF083A80021474D /* Podfile */; };
 		6EE4326F1EF087EF0021474D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4326E1EF087EF0021474D /* User.swift */; };
+		6EE53A821F36232E00FF5DC5 /* HttpFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE53A811F36232E00FF5DC5 /* HttpFailure.swift */; };
+		6EE53A841F3623EC00FF5DC5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE53A831F3623EC00FF5DC5 /* UserModel.swift */; };
 		6EEA1D271EF07FB400EB465F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA1D261EF07FB400EB465F /* AppDelegate.swift */; };
 		6EEA1D2C1EF07FB400EB465F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEA1D2A1EF07FB400EB465F /* Main.storyboard */; };
 		6EEA1D2E1EF07FB400EB465F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EEA1D2D1EF07FB400EB465F /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		66F59CB92A8A52C7F538C11F /* Pods-LovePub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LovePub.release.xcconfig"; path = "Pods/Target Support Files/Pods-LovePub/Pods-LovePub.release.xcconfig"; sourceTree = "<group>"; };
 		6EE4326C1EF083A80021474D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		6EE4326E1EF087EF0021474D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6EE53A811F36232E00FF5DC5 /* HttpFailure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpFailure.swift; sourceTree = "<group>"; };
+		6EE53A831F3623EC00FF5DC5 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		6EEA1D231EF07FB400EB465F /* LovePub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LovePub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EEA1D261EF07FB400EB465F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EEA1D2B1EF07FB400EB465F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				6EE4326E1EF087EF0021474D /* User.swift */,
+				6EE53A811F36232E00FF5DC5 /* HttpFailure.swift */,
 			);
 			name = Internet;
 			sourceTree = "<group>";
@@ -53,11 +58,12 @@
 		6EE432711EF088050021474D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6EE53A831F3623EC00FF5DC5 /* UserModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		6EE432721EF0880D0021474D /* Support */ = {
+		6EE432721EF0880D0021474D /* Support files */ = {
 			isa = PBXGroup;
 			children = (
 				6EEA1D261EF07FB400EB465F /* AppDelegate.swift */,
@@ -65,7 +71,7 @@
 				6EEA1D2F1EF07FB400EB465F /* LaunchScreen.storyboard */,
 				6EEA1D2A1EF07FB400EB465F /* Main.storyboard */,
 			);
-			name = Support;
+			name = "Support files";
 			sourceTree = "<group>";
 		};
 		6EE432731EF0881E0021474D /* View Controller */ = {
@@ -98,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				6EE432731EF0881E0021474D /* View Controller */,
-				6EE432721EF0880D0021474D /* Support */,
+				6EE432721EF0880D0021474D /* Support files */,
 				6EE432711EF088050021474D /* Model */,
 				6EE432701EF087F70021474D /* Internet */,
 				6EEA1D321EF07FB400EB465F /* Info.plist */,
@@ -158,7 +164,7 @@
 				TargetAttributes = {
 					6EEA1D221EF07FB400EB465F = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = QKMD9SP96X;
+						DevelopmentTeam = E34BN3H382;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -250,6 +256,8 @@
 			files = (
 				6EEA1D271EF07FB400EB465F /* AppDelegate.swift in Sources */,
 				6EE4326F1EF087EF0021474D /* User.swift in Sources */,
+				6EE53A841F3623EC00FF5DC5 /* UserModel.swift in Sources */,
+				6EE53A821F36232E00FF5DC5 /* HttpFailure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +383,7 @@
 			baseConfigurationReference = A60ADD5877D80CB6C8CA5C75 /* Pods-LovePub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QKMD9SP96X;
+				DEVELOPMENT_TEAM = E34BN3H382;
 				INFOPLIST_FILE = LovePub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -390,7 +398,7 @@
 			baseConfigurationReference = 66F59CB92A8A52C7F538C11F /* Pods-LovePub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = QKMD9SP96X;
+				DEVELOPMENT_TEAM = E34BN3H382;
 				INFOPLIST_FILE = LovePub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

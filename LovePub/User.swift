@@ -30,26 +30,8 @@ func createUser(email:String,country:String, viewController : UIViewController,c
                 completion(response!)
             }
         case .failure(let error):
-            let alert = UIAlertController(title: "Ooops", message: "\(error.localizedDescription)", preferredStyle: .alert)
-            let ok = UIAlertAction(title: "Close", style: .cancel, handler: {
-                UIAlertAction in
-                var close : String?
-                print(close!)
-            })
-            let setting = UIAlertAction(title: "Setting", style: .default, handler: { UIAlertAction in
-                guard let settingsUrl = URL(string: UIApplicationOpenSettingsURLString) else {
-                    return
-                }
-                if #available(iOS 10.0, *) {
-                    UIApplication.shared.open(settingsUrl, options: [:], completionHandler: { success in
-                    })
-                } else {
-                    UIApplication.shared.openURL(settingsUrl)
-                }
-            })
-            alert.addAction(ok)
-            alert.addAction(setting)
-            viewController.present(alert, animated: true, completion: nil)
+            
+            FailureHttps(viewController: viewController, error: error)
         }
     }
 }
