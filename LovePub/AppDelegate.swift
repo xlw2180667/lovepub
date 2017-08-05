@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let user = UserDefaults.standard
+        let islogin = user.object(forKey: "isLogin") as? Bool
+        if islogin == true {
+            switchViewControllers()
+        }
         return true
     }
 
@@ -41,6 +46,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func switchViewControllers() {
+        // switch root view controllers
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "appPages") as! UITabBarController
+        vc.selectedIndex = 0
+        self.window?.rootViewController = vc
+    }
 }
 

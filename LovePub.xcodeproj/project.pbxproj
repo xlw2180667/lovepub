@@ -12,6 +12,13 @@
 		6EE4326F1EF087EF0021474D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4326E1EF087EF0021474D /* User.swift */; };
 		6EE53A821F36232E00FF5DC5 /* HttpFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE53A811F36232E00FF5DC5 /* HttpFailure.swift */; };
 		6EE53A841F3623EC00FF5DC5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE53A831F3623EC00FF5DC5 /* UserModel.swift */; };
+		6EE53A861F36280400FF5DC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE53A851F36280400FF5DC5 /* LoginViewController.swift */; };
+		6EE53A891F36286F00FF5DC5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE53A881F36286F00FF5DC5 /* WelcomeViewController.swift */; };
+		6EE53A8C1F362AA100FF5DC5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE53A8B1F362AA100FF5DC5 /* Color.swift */; };
+		6EE53A8E1F36307C00FF5DC5 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE53A8D1F36307C00FF5DC5 /* ResetPasswordViewController.swift */; };
+		6EE53A901F36338700FF5DC5 /* checkEmailFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE53A8F1F36338700FF5DC5 /* checkEmailFormat.swift */; };
+		6EE53A921F36379100FF5DC5 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE53A911F36379100FF5DC5 /* Login.swift */; };
+		6EE53A941F366F3A00FF5DC5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE53A931F366F3A00FF5DC5 /* ProfileViewController.swift */; };
 		6EEA1D271EF07FB400EB465F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA1D261EF07FB400EB465F /* AppDelegate.swift */; };
 		6EEA1D2C1EF07FB400EB465F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEA1D2A1EF07FB400EB465F /* Main.storyboard */; };
 		6EEA1D2E1EF07FB400EB465F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EEA1D2D1EF07FB400EB465F /* Assets.xcassets */; };
@@ -25,6 +32,13 @@
 		6EE4326E1EF087EF0021474D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6EE53A811F36232E00FF5DC5 /* HttpFailure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpFailure.swift; sourceTree = "<group>"; };
 		6EE53A831F3623EC00FF5DC5 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		6EE53A851F36280400FF5DC5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6EE53A881F36286F00FF5DC5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		6EE53A8B1F362AA100FF5DC5 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		6EE53A8D1F36307C00FF5DC5 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		6EE53A8F1F36338700FF5DC5 /* checkEmailFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkEmailFormat.swift; sourceTree = "<group>"; };
+		6EE53A911F36379100FF5DC5 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		6EE53A931F366F3A00FF5DC5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6EEA1D231EF07FB400EB465F /* LovePub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LovePub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EEA1D261EF07FB400EB465F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EEA1D2B1EF07FB400EB465F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +65,7 @@
 			children = (
 				6EE4326E1EF087EF0021474D /* User.swift */,
 				6EE53A811F36232E00FF5DC5 /* HttpFailure.swift */,
+				6EE53A911F36379100FF5DC5 /* Login.swift */,
 			);
 			name = Internet;
 			sourceTree = "<group>";
@@ -67,18 +82,39 @@
 			isa = PBXGroup;
 			children = (
 				6EEA1D261EF07FB400EB465F /* AppDelegate.swift */,
+				6EEA1D321EF07FB400EB465F /* Info.plist */,
 				6EEA1D2D1EF07FB400EB465F /* Assets.xcassets */,
-				6EEA1D2F1EF07FB400EB465F /* LaunchScreen.storyboard */,
-				6EEA1D2A1EF07FB400EB465F /* Main.storyboard */,
 			);
 			name = "Support files";
 			sourceTree = "<group>";
 		};
-		6EE432731EF0881E0021474D /* View Controller */ = {
+		6EE432731EF0881E0021474D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6EE53A851F36280400FF5DC5 /* LoginViewController.swift */,
+				6EE53A881F36286F00FF5DC5 /* WelcomeViewController.swift */,
+				6EE53A8D1F36307C00FF5DC5 /* ResetPasswordViewController.swift */,
+				6EE53A931F366F3A00FF5DC5 /* ProfileViewController.swift */,
 			);
-			name = "View Controller";
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6EE53A871F36282600FF5DC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6EEA1D2F1EF07FB400EB465F /* LaunchScreen.storyboard */,
+				6EEA1D2A1EF07FB400EB465F /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6EE53A8A1F362A6200FF5DC5 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				6EE53A8B1F362AA100FF5DC5 /* Color.swift */,
+				6EE53A8F1F36338700FF5DC5 /* checkEmailFormat.swift */,
+			);
+			name = Function;
 			sourceTree = "<group>";
 		};
 		6EEA1D1A1EF07FB400EB465F = {
@@ -103,11 +139,12 @@
 		6EEA1D251EF07FB400EB465F /* LovePub */ = {
 			isa = PBXGroup;
 			children = (
-				6EE432731EF0881E0021474D /* View Controller */,
-				6EE432721EF0880D0021474D /* Support files */,
-				6EE432711EF088050021474D /* Model */,
+				6EE53A8A1F362A6200FF5DC5 /* Function */,
 				6EE432701EF087F70021474D /* Internet */,
-				6EEA1D321EF07FB400EB465F /* Info.plist */,
+				6EE432711EF088050021474D /* Model */,
+				6EE53A871F36282600FF5DC5 /* View */,
+				6EE432731EF0881E0021474D /* Controller */,
+				6EE432721EF0880D0021474D /* Support files */,
 			);
 			path = LovePub;
 			sourceTree = "<group>";
@@ -255,8 +292,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EEA1D271EF07FB400EB465F /* AppDelegate.swift in Sources */,
+				6EE53A921F36379100FF5DC5 /* Login.swift in Sources */,
+				6EE53A901F36338700FF5DC5 /* checkEmailFormat.swift in Sources */,
 				6EE4326F1EF087EF0021474D /* User.swift in Sources */,
+				6EE53A8C1F362AA100FF5DC5 /* Color.swift in Sources */,
+				6EE53A8E1F36307C00FF5DC5 /* ResetPasswordViewController.swift in Sources */,
+				6EE53A941F366F3A00FF5DC5 /* ProfileViewController.swift in Sources */,
 				6EE53A841F3623EC00FF5DC5 /* UserModel.swift in Sources */,
+				6EE53A891F36286F00FF5DC5 /* WelcomeViewController.swift in Sources */,
+				6EE53A861F36280400FF5DC5 /* LoginViewController.swift in Sources */,
 				6EE53A821F36232E00FF5DC5 /* HttpFailure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
