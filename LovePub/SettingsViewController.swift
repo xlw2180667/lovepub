@@ -60,7 +60,6 @@ class SettingsViewController: UIViewController, UITextViewDelegate {
         for thisView in views {
             addBottomLineForView(view: thisView!, color: UIColor.piSilver, height: thisView!.frame.height)
         }
-        //scrollView.backgroundColor = UIColor.piBlack
         scrollView.keyboardDismissMode = .interactive
     }
     
@@ -106,11 +105,34 @@ class SettingsViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func setName(_ sender: Any) {
+        
     }
+    
     @IBAction func setGender(_ sender: Any) {
+        let alert = UIAlertController(title: nil, message: "Gender", preferredStyle: .actionSheet)
+        let male = UIAlertAction(title: "Male", style: .default) { UIAlertAction in
+            let parameters = ["gender": "male"]
+            updateUser(parameters: parameters, viewController: self, completion: { (response) in
+                self.genderLabel.text = "male"
+            })
+        }
+        let female = UIAlertAction(title: "Female", style: .default) { UIAlertAction in
+            let parameters = ["gender": "female"]
+            updateUser(parameters: parameters, viewController: self, completion: { (response) in
+                self.genderLabel.text = "female"
+            })
+        }
+        let cancle = UIAlertAction(title: "Cancle", style: .cancel, handler: nil)
+        alert.addAction(male)
+        alert.addAction(female)
+        alert.addAction(cancle)
+        alert.view.tintColor = UIColor.piRed
+        present(alert, animated: true, completion: nil)
     }
+    
     @IBAction func setBirthday(_ sender: Any) {
     }
+    
     @IBAction func setAddress(_ sender: Any) {
     }
     
