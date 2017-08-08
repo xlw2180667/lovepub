@@ -22,6 +22,8 @@ class ProfileViewController: UIViewController {
     }
 
     func configureUI() {
+        navigationController?.navigationBar.tintColor = UIColor.piBlack
+        navigationController?.navigationBar.isTranslucent = false
         profilePhotoImageView.layer.cornerRadius = profilePhotoImageView.layer.bounds.width / 2
         profilePhotoImageView.layer.masksToBounds = true
         let url = URL(string: "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/13418696_867688870002098_3179344016098423113_n.jpg?oh=ef336c92674f24e6c1be814cf27b7bd7&oe=59F901C2")
